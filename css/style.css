@@ -19,3 +19,13 @@ header img {
     padding-left: 15px;
     padding-right: 15px;
 }
+article {
+    padding: 10px;
+    border: 1px solid #95a4a5;
+    width: 370px;
+}
+article > h2 {
+    background-color: #95a4a5;
+    color: #ffffff;
+    text-align: center;
+}
