@@ -1,3 +1,36 @@
+body {
+    background-color: #cccccc;
+}
+.container, .container-fluid {
+    background-color: #ffffff;
+}
+h1{
+    padding: 20px 0px;
+    margin: 0px;
+    color: #ffffff
+}
+
+#logo {
+    background-color: green;
+}
+#menu {
+    background-color: blue;
+}
+#banner-1 {
+    background-color: darkblue;
+}
+#banner-2 {
+    background-color: orange;
+}
+#banner-3 {
+    background-color: red;
+}
+#rodape {
+    background-color: black;
+}
+
+
+/*
 * {
     box-sizing: border-box;
 }
@@ -14,7 +47,7 @@ header img {
     margin-top: 12px;
 }
 .container {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -25,9 +58,18 @@ header img {
 article {
     padding: 0px;
     border: 1px solid #95a4a5;
-    width: 370px;
-    float: left;
-    margin-right: 30px;
+}
+@media (min-width: 600px) {
+    article {
+        background-color: yellow;    
+    }
+}
+@media (min-width: 800px) {
+    article {
+        width: 30%;
+        float: left;
+        margin-right: 5%;    
+    }
 }
 .planpeq{
     margin-right: 0px;
@@ -71,3 +113,4 @@ article > footer {
 .botao:hover {
     background-color: #045010;
 }
+*/
