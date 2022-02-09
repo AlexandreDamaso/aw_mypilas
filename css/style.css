@@ -17,6 +17,11 @@ header img {
 .planos div {
     margin: 15px 0px;
 }
+#planos::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 article {
     padding: 0px;
     border: 1px solid #95a4a5;
