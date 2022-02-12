@@ -1,5 +1,21 @@
+/* Grid Options *\
+                    Extra small devices       Small devices       Medium devices       Large devices
+                    Phones                    Tablets             Desktops             Desktops
+                    <768px                    >=768px             >=992px              >=1200px
+Grid behavior       Horizontal at all times   Collapsed to start, horizontal above breakpoints
+Container width     None (auto)               750px               970px                1170px
+Class prefix        .col-xs-                  .col-sm-            .col-md-             .col-lg-
+# of columns        12                        12                  12                   12
+Column width        Auto                      Aprox 62px          Aprox 81px           Aprox 97px
+Gutter width        30px (15px on each side of a column)
+Nestable            Yes
+Offsets             Yes
+Column ordering     Yes
+*/
+
+
 /* ##### ##### ##### *\
->  BASE 
+## BASE 
 \* ##### ##### ##### */
 
 body {
@@ -9,7 +25,7 @@ body {
 }
 
 /* ##### ##### ##### *\
->  CABEÇALHO 
+## CABEÇALHO 
 \* ##### ##### ##### */
 
 .cabecalho {
@@ -23,7 +39,46 @@ body {
 }
 
 /* ##### ##### ##### *\
->  PLANOS 
+## CHAMADA 
+\* ##### ##### ##### */
+
+.chamada {
+    padding: 80px 0;
+    background-color: #7ab55c;
+    font-size: 16px;
+    text-align: center;
+}
+.chamada__titulo {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 54px;
+    line-height: 0.9;
+    text-shadow: 2px 2px #313131;
+}
+.chamada__subtitulo {
+    margin: 60px 0;
+
+    color: #ffffff;
+
+    font-size: 16px;
+}
+.chamada__conheca {
+    font-size: 16px;
+}
+@media(min-width: 992px) {
+    .chamada__titulo {
+        padding-left: 20%;
+        padding-right: 20%;
+
+        font-size: 68px;
+    }
+}
+
+
+/* ##### ##### ##### *\
+## PLANOS 
 \* ##### ##### ##### */
 
 .bl-planos {
@@ -62,24 +117,44 @@ body {
 }
 
 /* ##### ##### ##### *\
->  BOTAO 
+## BOTAO VERDE
 \* ##### ##### ##### */
 
-.botao {
+.botao--verde {
     display: inline-block;
     background-color: #127d00;
     color: #ffffff;
     padding: 12px 16px;
     text-decoration: none;
 }
-.botao:hover, .botao:focus {
+.botao--verde:hover, .botao:focus {
     background-color: #045010;
     color: #ffffff;
     text-decoration: none;
 }
 
 /* ##### ##### ##### *\
->  RODAPE 
+## BOTAO PRINCIPAL
+\* ##### ##### ##### */
+
+.botao--main {
+    display: inline-block;
+    background-color: #004b86;
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.botao--main:hover, .botao:focus {
+    background-color: #003b6a;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+/* ##### ##### ##### *\
+## RODAPE 
 \* ##### ##### ##### */
 
 .bl-rodape {
