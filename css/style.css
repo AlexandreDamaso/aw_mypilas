@@ -1,4 +1,7 @@
-/* Grid Options *\
+/* ##### ##### ##### *\
+## GRID OPTIONS 
+\* ##### ##### ##### */
+/* ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
                     Extra small devices       Small devices       Medium devices       Large devices
                     Phones                    Tablets             Desktops             Desktops
                     <768px                    >=768px             >=992px              >=1200px
@@ -11,7 +14,53 @@ Gutter width        30px (15px on each side of a column)
 Nestable            Yes
 Offsets             Yes
 Column ordering     Yes
-*/
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### */
+
+
+/* ##### ##### ##### *\
+## MÉTODO BEM (Block - Element - Medifier
+\* ##### ##### ##### */
+/* ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
+
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### */
+
+
+/* ##### ##### ##### *\
+## Guidelines
+\* ##### ##### ##### */
+/* ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
+
+CSS {
+    # POSICIONAMENTO
+        - position
+            - static
+            - fixed
+            - relative
+            - absolute
+        - top
+        - botton
+        - left
+        - right
+        - z-index
+
+    # DISPLAY E BOX MODEL
+        - margin
+        - padding
+        - border
+        - width
+        - height
+
+    # CORES
+        - background-color
+        - color
+
+    # TEXTO
+        - font-family
+        - font-size
+}
+
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### */
+
 
 
 /* ##### ##### ##### *\
@@ -32,6 +81,14 @@ body {
     height: 60px;
     border-bottom: 1px solid #cccccc;
 }
+.cabecalho--fixo {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
 .cabecalho__logo {
     width: 100px;
     height: 35px;
@@ -43,6 +100,7 @@ body {
 \* ##### ##### ##### */
 
 .chamada {
+    margin-top: 60px;
     padding: 80px 0;
     background-color: #7ab55c;
     font-size: 16px;
@@ -76,6 +134,41 @@ body {
     }
 }
 
+/* ##### ##### ##### *\
+## DEPOIMENTO 
+\* ##### ##### ##### */
+
+.depoimento {
+    padding: 80px 0;
+    background-color: #e7e7e7;
+}
+.depoimento__sitacao {
+    font-size: 22px;
+}
+@media(min-width: 992px) {
+    .depoimento__sitacao {
+        padding-left: 15%;
+        padding-right: 15%;
+
+        font-size: 28px;
+    }
+}
+.depoimento__sitacao > blockquote {
+    margin: 0px;
+    padding: 0 60px;
+    text-align: center;
+}
+.depoimento__autor {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+.depoimento__autor > img {
+    border-radius: 50%;
+}
+.depoimento__autor > p {
+    margin-top: 5px;
+}
 
 /* ##### ##### ##### *\
 ## PLANOS 
@@ -157,12 +250,11 @@ body {
 ## RODAPE 
 \* ##### ##### ##### */
 
-.bl-rodape {
-    height: 60px;
+.rodape {
+    padding: 40px 0;
     border-top: 1px solid #cccccc;
-    background-color: black;
+    background-color: #484848;
     color: #ffffff;
-    font-size: 7px;
+    font-size: 16px;
     text-align: center;
-    padding-top: 15px;
 }
