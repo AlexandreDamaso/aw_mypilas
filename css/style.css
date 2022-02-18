@@ -79,6 +79,7 @@ body {
 
 .cabecalho {
     height: 60px;
+    line-height: 60px;
     border-bottom: 1px solid #cccccc;
 }
 .cabecalho--fixo {
@@ -92,7 +93,79 @@ body {
 .cabecalho__logo {
     width: 100px;
     height: 35px;
-    margin-top: 12px;
+}
+
+/* ##### ##### ##### *\
+## NAVEGAÇÃO
+\* ##### ##### ##### */
+
+.navegacao__menu {
+    float: right;
+}
+@media(min-width: 768px) {
+    .botao-chaveador {
+        display: none;
+    }
+}
+
+/* ##### ##### ##### *\
+## MENU LATERAL
+\* ##### ##### ##### */
+
+@media(max-width: 768px){
+    .menu-lat {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+
+        display: none;
+        margin: 0px;
+        padding: 20px;
+        width: 200px;
+        border-right: 1px solid #eeeeee;
+
+        background-color: #fbfbfb;
+
+        font-size: 14px;
+
+        list-style: none;
+    }
+    .js-menu--show {
+        display: block;
+    }
+    .menu-lat__item {
+        display: block;
+    
+        line-height: 3;
+    }
+    .menu-lat__item--botao {
+        margin-top: 20px;
+    }
+}
+@media(min-width: 769px){
+    .menu-lat {
+        margin: 0px;
+    }
+    .menu-lat__item {
+        display: inline-block;
+        padding-left: 20px;
+    }
+}
+
+/* ##### ##### ##### *\
+## BOTAO CHAVEADOR
+\* ##### ##### ##### */
+
+.botao-chaveador {
+    width: 24px;
+    height: 24px;
+    border: 0;
+
+    background: none;
+    background-image: url("../img/bars.png");
+
+    outline: none;
 }
 
 /* ##### ##### ##### *\
@@ -154,9 +227,22 @@ body {
     }
 }
 .depoimento__sitacao > blockquote {
+    position: relative;
+
     margin: 0px;
     padding: 0 60px;
     text-align: center;
+}
+.depoimento__sitacao > blockquote::before {
+    position: absolute;
+    top: -62px;
+    left: 0px;
+
+    color: #cccccc;
+
+    font-size: 176px;
+
+    content: "\201C";
 }
 .depoimento__autor {
     margin-top: 40px;
@@ -177,12 +263,32 @@ body {
 .bl-planos {
     padding: 65px 0px;
 }
-.bl-planos div {
-    margin: 15px 0px;
+@media(max-width: 768px) {
+    .bl-planos div:not(.ultimo-plano) {
+        margin-bottom: 40px;
+    }
 }
+
 .plano {
+    position: relative;
+
     padding: 0px;
     border: 1px solid #95a4a5;
+}
+.plano--rotulo::after {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+
+    padding: 0 10px;
+
+    background-color: #c20303;
+    color: #ffffff;
+
+    font-size: 10px;
+    line-height: 2.5;
+
+    content: "MAIS POPULAR";
 }
 .plano__cabecalho {
     background-color: #95a4a5;
@@ -209,15 +315,20 @@ body {
     padding: 20px 0px;
 }
 
+
 /* ##### ##### ##### *\
 ## BOTAO VERDE
 \* ##### ##### ##### */
 
 .botao--verde {
     display: inline-block;
-    background-color: #127d00;
-    color: #ffffff;
+    line-height: normal;
+
     padding: 12px 16px;
+
+    color: #ffffff;
+    background-color: #127d00;
+
     text-decoration: none;
 }
 .botao--verde:hover, .botao:focus {
