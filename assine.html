@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPilas</title>
+    <link rel="stylesheet" type="text/css" href="css/style_bsg.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <nav class="navegacao__assine">
+                <a href="index.html"><img class="cabecalho__logo" src="img/logo.png" alt="MyPilas" /></a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="assinatura">
+        <div class="container">
+            <form action="#" method="get">
+                <h1 class="titulo__formulario">Sua assinatura do MyPilas</h1>
+
+                <div class="layout__formulario">
+                    <label for="razao__social">Razão social</label>
+                    <input class="campo" name="razaoSocial" id="razao__social" type="text" required />
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="layout__formulario">
+                            <label for="cnpj">CNPJ</label>
+                            <input class="campo" id="cnpj" type="text" required />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="layout__formulario">
+                            <label for="fundacao">Data da fundação</label>
+                            <input class="campo" id="fundacao" type="date" required />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layout__formulario">
+                    <label for="responsavel">Responsável</label>
+                    <input class="campo" id="responsavel" type="text" />
+                </div>
+
+                <div class="layout__formulario">
+                    <label for="email">E-mail</label>
+                    <input class="campo" id="email" type="email" required />
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="layout__formulario">
+                            <label for="estado">Estado</label>
+                            <select class="campo">
+                                <option>Selecione o estado</option>
+                                <option value="GO">Goiás</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="MT">Mato Grosso</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="layout__formulario">
+                            <label for="cidade">Cidade</label>
+                            <select class="campo">
+                                <option>Selecione o estado</option>
+                                <option value="1">Goiánia</option>
+                                <option value="2">Anápolis</option>
+                                <option value="3">Brasília</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="layout__formulario">
+                            <label for="senha">Senha</label>
+                            <input class="campo" id="senha" type="password" required />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="layout__formulario">
+                            <label for="confsenha">Confirme a senha</label>
+                            <input class="campo" id="confsenha" type="password" required />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="botao__formulario">
+                    <input class="botao--main" type="submit" value="Assinar MyPilas" />
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>MyPilas &copy;.teste Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
